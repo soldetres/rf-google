@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-21T14:00:55.986933" rpa="false" schemaversion="5">
+<suite id="s1" name="GoogleSearch" source="C:\Users\Inti\OneDrive\Documents\Automation Frameworks &amp; Tools\Robot Framework\Tests\Google\FunctionalTestSuite\GoogleSearch.robot">
+<test id="s1-t1" name="This is a Google test case" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-21T14:00:56.159933" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-21T14:00:56.159933" elapsed="2.198025"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-21T14:00:58.357958" elapsed="0.115573"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-21T14:00:58.474527" level="INFO">Typing text 'Hello World' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>Hello World</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-21T14:00:58.474527" elapsed="0.059529"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-21T14:00:58.535058" level="INFO">Clicking button 'name=btnK'.</msg>
+<msg time="2024-02-21T14:00:58.935213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-21T14:00:58.936214" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AE7B7012+3522402]
+	(No symbol) [0x00007FF6AE3D8352]
+	(No symbol) [0x00007FF6AE28596D]
+	(No symbol) [0x00007FF6AE2CD3C6]
+	(No symbol) [0x00007FF6AE2C1910]
+	(No symbol) [0x00007FF6AE2EF05A]
+	(No symbol) [0x00007FF6AE2C120A]
+	(No symbol) [0x00007FF6AE2EF270]
+	(No symbol) [0x00007FF6AE30BDA3]
+	(No symbol) [0x00007FF6AE2EEE03]
+	(No symbol) [0x00007FF6AE2BF4D4]
+	(No symbol) [0x00007FF6AE2C05F1]
+	GetHandleVerifier [0x00007FF6AE7E9B9D+3730157]
+	GetHandleVerifier [0x00007FF6AE83F02D+4079485]
+	GetHandleVerifier [0x00007FF6AE8375D3+4048163]
+	GetHandleVerifier [0x00007FF6AE50A649+718233]
+	(No symbol) [0x00007FF6AE3E4A3F]
+	(No symbol) [0x00007FF6AE3DFA94]
+	(No symbol) [0x00007FF6AE3DFBC2]
+	(No symbol) [0x00007FF6AE3CF2E4]
+	BaseThreadInitThunk [0x00007FFD017D7344+20]
+	RtlUserThreadStart [0x00007FFD035226B1+33]
+</msg>
+<arg>name=btnK</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-21T14:00:58.534056" elapsed="0.405158">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AE7B7012+3522402]
+	(No symbol) [0x00007FF6AE3D8352]
+	(No symbol) [0x00007FF6AE28596D]
+	(No symbol) [0x00007FF6AE2CD3C6]
+	(No symbol) [0x00007FF6AE2C1910]
+	(No symbol) [0x00007FF6AE2EF05A]
+	(No symbol) [0x00007FF6AE2C120A]
+	(No symbol) [0x00007FF6AE2EF270]
+	(No symbol) [0x00007FF6AE30BDA3]
+	(No symbol) [0x00007FF6AE2EEE03]
+	(No symbol) [0x00007FF6AE2BF4D4]
+	(No symbol) [0x00007FF6AE2C05F1]
+	GetHandleVerifier [0x00007FF6AE7E9B9D+3730157]
+	GetHandleVerifier [0x00007FF6AE83F02D+4079485]
+	GetHandleVerifier [0x00007FF6AE8375D3+4048163]
+	GetHandleVerifier [0x00007FF6AE50A649+718233]
+	(No symbol) [0x00007FF6AE3E4A3F]
+	(No symbol) [0x00007FF6AE3DFA94]
+	(No symbol) [0x00007FF6AE3DFBC2]
+	(No symbol) [0x00007FF6AE3CF2E4]
+	BaseThreadInitThunk [0x00007FFD017D7344+20]
+	RtlUserThreadStart [0x00007FFD035226B1+33]
+</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-02-21T14:00:58.939214" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-02-21T14:00:58.940214" elapsed="0.000000"/>
+</kw>
+<tag>regression</tag>
+<status status="FAIL" start="2024-02-21T14:00:56.158934" elapsed="2.781280">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=121.0.6167.185)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AE7B7012+3522402]
+	(No symbol) [0x00007FF6AE3D8352]
+	(No symbol) [0x00007FF6AE28596D]
+	(No symbol) [0x00007FF6AE2CD3C6]
+	(No symbol) [0x00007FF6AE2C1910]
+	(No symbol) [0x00007FF6AE2EF05A]
+	(No symbol) [0x00007FF6AE2C120A]
+	(No symbol) [0x00007FF6AE2EF270]
+	(No symbol) [0x00007FF6AE30BDA3]
+	(No symbol) [0x00007FF6AE2EEE03]
+	(No symbol) [0x00007FF6AE2BF4D4]
+	(No symbol) [0x00007FF6AE2C05F1]
+	GetHandleVerifier [0x00007FF6AE7E9B9D+3730157]
+	GetHandleVerifier [0x00007FF6AE83F02D+4079485]
+	GetHandleVerifier [0x00007FF6AE8375D3+4048163]
+	GetHandleVerifier [0x00007FF6AE50A649+718233]
+	(No symbol) [0x00007FF6AE3E4A3F]
+	(No symbol) [0x00007FF6AE3DFA94]
+	(No symbol) [0x00007FF6AE3DFBC2]
+	(No symbol) [0x00007FF6AE3CF2E4]
+	BaseThreadInitThunk [0x00007FFD017D7344+20]
+	RtlUserThreadStart [0x00007FFD035226B1+33]
+</status>
+</test>
+<doc>This is a sample test case for the SeleniumLibrary</doc>
+<status status="FAIL" start="2024-02-21T14:00:55.990932" elapsed="2.952281"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="GoogleSearch">GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
